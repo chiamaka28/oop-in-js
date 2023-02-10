@@ -1,11 +1,19 @@
 const classroom = {
-    hasTeachingAssistant : true;
+    hasTeachingAssistant : true,
     classList:['rashida', 'john', 'roman', 'lisa', 'omair', 'lukas']
 }
 
 
-const getStudents = (classroom) => {
+const getStudentNames = (classroom) => {
     if (classrom.hasTeachingAssistant === true) {
-        let teacher  = 
+       const {hasTeachingAssistant, classList} = classroom;
+       const [, , ...students] = classList;
+       console.log(students)
+    }else{
+        const {hasTeachingAssistant, classList} = classroom;
+        const [, ...students] = classList;
+        console.log(students)
     }
 }
+
+getStudentNames()

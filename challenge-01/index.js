@@ -4,13 +4,25 @@ class Book {
       this.author = author;
       this.ISBN = ISBN;
       this.numCopies = numCopies;
+    } 
+    get availibility () {
+        return this.getAvailibility
     }
-    getAvailibility(){
+    getAvailibility = function() {
         if (this.numCopies === 0){
-            console.log('out of stock');
+           return 'out of stock';
         }else if (this.numCopies > 10){
-            console.log('in stock');
+            return 'low stock';
         }
+        return "in stock";
     }
-    
+
+    sell = function(numCopiesSold = 1){
+        this.numCopies -= numCopiesSold;
+}
+    restock = function(numCopiesStocked = 5) {
+         this.numCopies += numCopiesStocked;
+}
+
+
 }

@@ -5,10 +5,11 @@ const seconds = document.getElementById("seconds");
 
 
 function setTime ( ) {
-    const clock = newDate ();
-    hour.textContent = clock.gethours()
-    minutes.textContent = clock.getminutes()
-    seconds.textContent = clock.getseconds()
+    const now = new Date();
+    
+    hour.innerHTML = now.getHours()
+    minutes.innerHTML =  now.getMinutes();
+    seconds.innerHTML = now.getSeconds()
 
 }
 setInterval(setTime,1000)

@@ -7,7 +7,7 @@ class Movie {
         this.Rating
     }
 
-    Movie.prototype.getOverview () {
-        console.log(`${this.tittle} a ${this.genre} film directed by ${this.director} was released in ${this.ReleaseYear}. It recieved a rating of ${this.}` )
+    getOverview () {
+        console.log(`${this.tittle} a ${this.genre} film directed by ${this.director} was released in ${this.ReleaseYear}. It recieved a rating of ${this.rating}` )
     }
 }

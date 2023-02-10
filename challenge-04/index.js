@@ -5,6 +5,11 @@ class Book {
       this.ISBN = ISBN;
       this.numCopies = numCopies;
     }
+
+    get availibility () {
+        return this.getAvailibility
+    }
+    
     getAvailibility(){
         if (this.numCopies === 0){
             console.log('out of stock');
@@ -12,6 +17,14 @@ class Book {
             console.log('in stock');
         }
     }
+
+    sell = function(numCopiesSold = 1){
+        this.numCopies -= numCopiesSold;
+}
+    restock = function(numCopiesStocked = 5) {
+         this.numCopies += numCopiesStocked;
+}
+
     
 }
 

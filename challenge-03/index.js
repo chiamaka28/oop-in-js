@@ -1,17 +1,17 @@
 const dishes = [
     {
-        name = 'Eggplant Permesan';
-        vegetarian = 'false';
+        name : 'Eggplant Permesan',
+        vegetarian : false
 
     } ,
     {
-        name = 'spaghetti & meatballs';
-        vegetarian = 'true';
-    }
+        name : 'spaghetti & meatballs',
+        vegetarian : true
+    },
 ]
 
-function isVegetarian (dishes) {
-    dishes.filter(dish => {
-      
-    })
+const isVegetarian = function (dishes) {
+    return dishes.filter(function (dish) {
+        dish.vegetarian === true;
+    });
 }
